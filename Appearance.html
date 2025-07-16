@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RQA_REPORT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    table {
+      border-collapse: collapse; /* รวมเส้นขอบ */
+      width: 100%;
+    }
+
+    th, td {
+      border: 2px solid black; /* เส้นกรอบช่อง */
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- ปุ่มเปิด Sidebar -->
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+        ☰ เมนู
+      </button>
+    </div>
+  </header>
+
+<div class="container">
+  <!-- Sidebar Navigation (Offcanvas) -->
+  <nav class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="sidebar">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">เลือกหัวข้อ</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">A.Facility</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Appearance.html">B.Appearance</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="FIFOPreparation.html">C.FIFO / Preparation</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Storage.html">D.Storage</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="ShelflifeHoldingtime.html">E.Shelf life / Holding time</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Temperature.html">F.Temperature</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="SanitationOperation Management.html">G.Sanitation & Operation Management</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Equipment.html">H.Equipment</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Critical.html">I.Critical</a>
+        </li>
+        <hr>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-4">
+    <section>
+      <h2 class="text-center">B.Appearance</h2>
+      <hr>
+    </section>
+    
+    <div class="container">
+        
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center" >NO</th>
+      <th scope="col" class="text-center" >Evidence</th>
+      <th scope="col" class="text-center">Not Complied With Standard</th>
+      <th scope="col" class="text-center">Issue Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><img src="10.png" alt="" width="300" height="200"> </td>
+      <td><p>พบวัตถุดิบ/ ผลิตภัณฑ์ เสื่อมสภาพ/ บูด/ เน่าเสีย <br> <span class="bg-warning text-dark px-1"> (กุ้งขาวแกะเปลือกครัวเทปันมีลักษณะตัวแดง หัวดำ) </span></class></p></td>
+      <td class="text-center"><span class="bg-danger"><b> Critical </b></span></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><img src="11.png" alt="" width="300" height="200"></td>
+      <td><p>พบวัตถุดิบ/ ผลิตภัณฑ์ มีลักษณะปรากฎ/ สี/ กลิ่น/ รส/ เนื้อสัมผัสไม่ถูกต้องตามมาตรฐาน<br> <span class="bg-warning text-dark px-1"> (ไควาแระใช้ระหว่างวันมีสภาพใบเป็นจุดดำจำนวนมาก) </span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td><img src="12.png" alt="" width="300" height="200"> </td>
+      <td><p>พบวัตถุดิบ/ ผลิตภัณฑ์ มีสิ่งแปลกปลอมปนเปื้อน<br> <span class="bg-warning text-dark px-1"> (หนอนในกล่องผักวางตุ้งตัดแต่งครัวร้อน) </span></p></td>
+      <td class="text-center"><span class="bg-danger"><b> Critical </b></span></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td><img src="13.png" alt="" width="300" height="200"> </td>
+      <td><p>พบวัตถุดิบ/ ผลิตภัณฑ์ มีลักษณะปรากฎ/ สี/ กลิ่น/ รส/ เนื้อสัมผัสไม่ถูกต้องตามมาตรฐาน <br> <span class="bg-warning text-dark px-1">(ซุปกาที่ออกเสิร์ฟมีรสจืดกว่ามาตรฐาน)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td><img src="14.png" alt="" width="300" height="200"> </td>
+      <td><p>พบผลิตภัณฑ์ที่จัดเสิร์ฟให้กับลูกค้ามี น้ำหนัก/ จำนวนชิ้น/ องค์ประกอบ ไม่ถูกต้องตามมาตรฐาน <br> <span class="bg-warning text-dark px-1">(ชั่งน้ำหนักข้าวในซูชิหน้ากุ้งชีสย่างได้ 12.4, 13, 13 g Std.8-10 g) </span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td><img src="15.png" alt="" width="300" height="200"> </td>
+      <td><p>พบผลิตภัณฑ์ที่จัดเสิร์ฟให้กับลูกค้ามี น้ำหนัก/ จำนวนชิ้น/ องค์ประกอบ ไม่ถูกต้องตามมาตรฐาน <br> <span class="bg-warning text-dark px-1">(ชั่งน้ำหนักผัดผักยาไซในเมนูกุ้งเทปันยากิได้ 17.8 g Std.25-30 g) </span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+
+</div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <div class="container">
+      <p>&copy; 2025 วรวุฒิ เอี่ยมสะอาด. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

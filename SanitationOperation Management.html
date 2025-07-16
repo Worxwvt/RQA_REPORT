@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RQA_REPORT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    table {
+      border-collapse: collapse; /* รวมเส้นขอบ */
+      width: 100%;
+    }
+
+    th, td {
+      border: 2px solid black; /* เส้นกรอบช่อง */
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- ปุ่มเปิด Sidebar -->
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+        ☰ เมนู
+      </button>
+    </div>
+  </header>
+
+<div class="container">
+  <!-- Sidebar Navigation (Offcanvas) -->
+  <nav class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="sidebar">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">เลือกหัวข้อ</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">A.Facility</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Appearance.html">B.Appearance</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="FIFOPreparation.html">C.FIFO / Preparation</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Storage.html">D.Storage</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="ShelflifeHoldingtime.html">E.Shelf life / Holding time</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Temperature.html">F.Temperature</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="SanitationOperation Management.html">G.Sanitation & Operation Management</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Equipment.html">H.Equipment</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Critical.html">I.Critical</a>
+        </li>
+        <hr>
+      </ul>
+    </div>
+  </nav>
+
+   <!-- Main Content -->
+  <main class="container my-4">
+    <section>
+      <h2 class="text-center">G.Sanitation & Operation Management</h2c>
+        <hr>
+    </section>
+    
+    <div class="container">
+        
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center" >NO</th>
+      <th scope="col" class="text-center" >Evidence</th>
+      <th scope="col" class="text-center">Not Complied With Standard</th>
+      <th scope="col" class="text-center">Issue Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>ไม่มีรูปภาพ</td>
+      <td><p>พบอาหาร/ เมนูที่จัดเสิร์ฟให้ลูกค้าใช้ระยะเวลาเกินมาตรฐาน Service Time <br> <span class="bg-warning text-dark px-1"> (เสิร์ฟเมนูซุปกาในระยะเวลาเกิน 15 นาที (ซุปกาที่ออกเสิร์ฟมีรสจืดกว่ามาตรฐาน ให้ต้มใหม่) </span></class></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><img src="25.png" alt="" width="300" height="200"> </td>
+      <td><p>พบผ้าทำความสะอาดสกปรกเป็นเชื้อรา/ ขาดชำรุดมีเศษชิ้นส่วนเสี่ยงต่อการหลุดปนเปื้อนไปในวัตถุดิบ/ ผลิตภัณฑ์ <br> <span class="bg-warning text-dark px-1"> (ผ้าน้ำเงินครัวเทปันขาดชำรุด) </span></p></td>
+      <td class="text-center"><span class="bg-danger"><b> Critical </b></span></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td><img src="26.png" alt="" width="300" height="200"> </td>
+      <td><p>พบการลงบันทึกเอกสารไม่ครบถ้วน <span class="bg-warning text-dark px-1"> (เอกสาร PEP  9/7/2025 ไม่ลงบันทึกอุณหภูมิเครื่องเย็นในรอบบ่าย) </span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td><img src="27.png" alt="" width="300" height="200"> </td>
+      <td><p>ไมพบการทวนสอบจุด CCP ของพนักงานและทีมงานผู้จัดการ <br> <span class="bg-warning text-dark px-1"> (เอกสาร CCP 1/7/2025 ไม่มีการลงบันทึกอุณหภูมิการลวกเส้นบะหมี่ (บันทึกผิดช่อง) </span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>ไม่มีรูปภาพ</td>
+      <td><p>พบ ไม่เตรียมสบู่ล้างมือ แอลกกอฮอล์ น้ำยาฆ่าเชื้อ  กระดาษเช็ดมือ ไว้ในจุดม็อบบซิงค์ หรือจุดล้างที่กำหนด <br> <span class="bg-warning text-dark px-1"> (ในรถเตมากิไม่มีแอลกอฮอลล์สเปรย์มือ) </span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td><img src="28.png" alt="" width="300" height="200"></td>
+      <td><p>พบยังไม่มีการดำเนินการติดป้าย Allergen หรือ จัดวางสินค้าแยกตาม Allergen <br> <span class="bg-warning text-dark px-1"> (ไม่พบป้ายชี้บ่ง และการจัดการแยกการจัดเก็บวัตถุดิบที่มีสารก่อภูมิแพ้ที่ครัวเย็น) </span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td><img src="29.png" alt="" width="300" height="200"> </td>
+      <td><p>พบเอกสาร Service Report ของSupplier บันทึกไม่สมบูรณ์ เช่น ไม่มีการระบุ layout บ้านแมลงสาบ <br> <span class="bg-warning text-dark px-1">(เอกสารบันทึกผู้เยี่ยมชมไม่ได้ลงชื่อเจ้าหน้าที่โออิชิวันที่ 11/6/2025)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+
+</div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <div class="container">
+      <p>&copy; 2025 วรวุฒิ เอี่ยมสะอาด. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

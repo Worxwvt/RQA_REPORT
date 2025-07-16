@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RQA_REPORT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    table {
+      border-collapse: collapse; /* รวมเส้นขอบ */
+      width: 100%;
+    }
+
+    th, td {
+      border: 2px solid black; /* เส้นกรอบช่อง */
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- ปุ่มเปิด Sidebar -->
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+        ☰ เมนู
+      </button>
+    </div>
+  </header>
+
+<div class="container">
+  <!-- Sidebar Navigation (Offcanvas) -->
+  <nav class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="sidebar">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">เลือกหัวข้อ</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">A.Facility</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Appearance.html">B.Appearance</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="FIFOPreparation.html">C.FIFO / Preparation</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Storage.html">D.Storage</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="ShelflifeHoldingtime.html">E.Shelf life / Holding time</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Temperature.html">F.Temperature</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="SanitationOperation Management.html">G.Sanitation & Operation Management</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Equipment.html">H.Equipment</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Critical.html">I.Critical</a>
+        </li>
+        <hr>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-4">
+    <section>
+      <h2 class="text-center">F.Temperature</h2>
+      <hr>
+    </section>
+    
+    <div class="container">
+        
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center" >NO</th>
+      <th scope="col" class="text-center" >Evidence</th>
+      <th scope="col" class="text-center">Not Complied With Standard</th>
+      <th scope="col" class="text-center">Issue Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><img src="24.png" alt="" width="300" height="200"> </td>
+      <td><p>พบอุณหภูมิวัตถุดิบ/ ผลิตภัณฑ์แช่เย็นไม่ได้มาตรฐาน วัดได้...... °C <br> <span class="bg-warning text-dark px-1"> (หมูสไลด์ใช้งานระหว่างวันในตู้แช่เย็นครัวราเมน วัดอุณหภูมิได้ 8,9 C ตู้ 5,6 C) </span></class></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+
+</div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <div class="container">
+      <p>&copy; 2025 วรวุฒิ เอี่ยมสะอาด. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

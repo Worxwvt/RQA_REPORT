@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RQA_REPORT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    table {
+      border-collapse: collapse; /* รวมเส้นขอบ */
+      width: 100%;
+    }
+
+    th, td {
+      border: 2px solid black; /* เส้นกรอบช่อง */
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- ปุ่มเปิด Sidebar -->
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+        ☰ เมนู
+      </button>
+    </div>
+  </header>
+
+<div class="container">
+  <!-- Sidebar Navigation (Offcanvas) -->
+  <nav class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="sidebar">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">เลือกหัวข้อ</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">A.Facility</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Appearance.html">B.Appearance</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="FIFOPreparation.html">C.FIFO / Preparation</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Storage.html">D.Storage</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="ShelflifeHoldingtime.html">E.Shelf life / Holding time</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Temperature.html">F.Temperature</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="SanitationOperation Management.html">G.Sanitation & Operation Management</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Equipment.html">H.Equipment</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Critical.html">I.Critical</a>
+        </li>
+        <hr>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-4">
+    <section>
+      <h2 class="text-center">A.Facility</h2>
+      <hr>
+    </section>
+    
+    <div class="container">
+        
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center" >NO</th>
+      <th scope="col" class="text-center" >Evidence</th>
+      <th scope="col" class="text-center">Not Complied With Standard</th>
+      <th scope="col" class="text-center">Issue Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><img src="1.png" alt="" width="300" height="200"> </td>
+      <td><p>พบจาน/ ช้อน/ ส้อม/ อุปกรณ์เครื่องปรุง หรือภาชนะใส่อาหารรวมไปถึง คลิปหนีบอาหาร ที่จุดบริการไม่สะอาดมีคราบสกปรกสะสม <span class="bg-warning text-dark px-1"> (ช้อนจุดบริการลูกค้าไม่สะอาด)</span></class></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>ไม่มีรูปภาพ</td>
+      <td><p>พบจาน/ ช้อน/ ส้อม/ อุปกรณ์เครื่องปรุง หรือภาชนะใส่อาหารรวมไปถึง คลิปหนีบอาหาร ที่จุดบริการไม่สะอาดมีคราบสกปรกสะสม <span class="bg-warning text-dark px-1"> (ในตู้เก็บเตานาเบะสต๊อกหน้าครัวราเมนไม่สะอาด)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td><img src="2.png" alt="" width="300" height="200"> </td>
+      <td><p>พบจาน/ ช้อน/ ส้อม/ อุปกรณ์เครื่องปรุง หรือภาชนะใส่อาหารรวมไปถึง คลิปหนีบอาหาร ที่จุดบริการไม่สะอาดมีคราบสกปรกสะสม<br> <span class="bg-warning text-dark px-1"> (ถ้วยน้ำจิ้มจุดบริการลูกค้าไม่สะอาด)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td><img src="3.png" alt="" width="300" height="200"> </td>
+      <td><p>พบพื้น/ ผนัง/ เพดาน/ หลอดไฟ/ ช่องระบายอากาศ / อุปกรณ์สนับสนุนงานระบบต่างๆ แตก/ ชำรุด/ ไม่พร้อมใช้งาน<br> <span class="bg-warning text-dark px-1">(พื้นหน้าบา์น้ำจิ้มแตกชำรุด)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td><img src="4.png" alt="" width="300" height="200"> </td>
+      <td><p>พบพื้น/ ผนัง/ เพดาน/ หลอดไฟ/ ช่องระบายอากาศ / อุปกรณ์สนับสนุนงานระบบต่างๆ ไม่สะอาดมีคราบสกปรกสะสม<br> <span class="bg-warning text-dark px-1">(บนหลังคารถเตมากิไม่สะอาด)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td><img src="5.png" alt="" width="300" height="200"> </td>
+      <td><p>พบพื้น/ ผนัง/ เพดาน/ หลอดไฟ/ ช่องระบายอากาศ / อุปกรณ์สนับสนุนงานระบบต่างๆ ไม่สะอาดมีคราบสกปรกสะสม<br> <span class="bg-warning text-dark px-1">(ชั้นวางเครื่องปริ้นบิลบนผนัง ไม่สะอาด ครัวซูชิ)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td><img src="6.png" alt="" width="300" height="200"> </td>
+      <td><p>พบพื้น/ ผนัง/ เพดาน/ หลอดไฟ/ ช่องระบายอากาศ / อุปกรณ์สนับสนุนงานระบบต่างๆ ไม่สะอาดมีคราบสกปรกสะสม <br> <span class="bg-warning text-dark px-1">(พื้นครัวซูชิไม่สะอาด)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td><img src="7.png" alt="" width="300" height="200"> </td>
+      <td><p>พบพื้น/ ผนัง/ เพดาน/ หลอดไฟ/ ช่องระบายอากาศ / อุปกรณ์สนับสนุนงานระบบต่างๆ ไม่สะอาดมีคราบสกปรกสะสม<br> <span class="bg-warning text-dark px-1">(ผนังครัวร้อนมีคราบสะสม)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td><img src="8.png" alt="" width="300" height="200"> </td>
+      <td><p>พบพื้น/ ผนัง/ เพดาน/ หลอดไฟ/ ช่องระบายอากาศ / อุปกรณ์สนับสนุนงานระบบต่างๆ ไม่สะอาดมีคราบสกปรกสะสม<br> <span class="bg-warning text-dark px-1">(ฝ้าเพดานครัวราเมน มีฝุ่นและคราบสะสม)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td><img src="9.png" alt="" width="300" height="200"> </td>
+      <td><p>พบพื้น/ ผนัง/ เพดาน/ หลอดไฟ/ ช่องระบายอากาศ / อุปกรณ์สนับสนุนงานระบบต่างๆ ไม่สะอาดมีคราบสกปรกสะสม<br> <span class="bg-warning text-dark px-1">(พื้นใต้ตู้ขนมหวานไม่สะอาด)</span></p></td>
+      <td class="text-center"> Normal </td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+
+</div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <div class="container">
+      <p>&copy; 2025 วรวุฒิ เอี่ยมสะอาด. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
